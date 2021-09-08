@@ -4,6 +4,10 @@ import SignIn from "./components/SignIn";
 import CreateUser from "./components/UserManagement/CreateUser";
 import EditUser from "./components/UserManagement/EditUser";
 import UserList from "./components/UserManagement/UserList";
+import HeaderTest from "./components/HeaderTest";
+import Test from "./components/Test";
+import UseRefTest from "./components/UseRefTest";
+
 function App() {
   return (
     <div className="app-container">
@@ -21,6 +25,9 @@ function App() {
             path="/user-management/edit-user/:_id"
             component={EditUser}
           />
+          <Route exact path="/header" component={HeaderTest} />
+          <Route exact path="/test" component={Test} />
+          <Route exact path="/useRefTest" component={UseRefTest} />
         </Switch>
       </Router>
     </div>
